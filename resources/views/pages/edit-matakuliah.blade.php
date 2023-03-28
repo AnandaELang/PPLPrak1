@@ -292,7 +292,7 @@
                                 </td>
                                 <td>
                                     <label class="custom-checkbox">
-                                        <input type="radio" name="matakuliah_bk1" value="0" >
+                                        <input type="radio" name="matakuliah_bk1" value="1" >
                                         <span class="checkmark"></span>
                                     </label>
                                 </td>

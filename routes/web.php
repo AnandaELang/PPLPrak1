@@ -13,12 +13,13 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
 
-});
+// });
 
     //ELANG
+	Route::get("/", [PageController::class, 'utama']);
     Route::get("/edit-matakuliah", [PageController::class, 'editMatakuliah']);
     Route::put("/update-matakuliah/{id}", [PageController::class, 'updateMatakuliah']);
     Route::post("/store-matakuliah", [PageController::class, 'storeMatakuliah']);

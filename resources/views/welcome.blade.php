@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <style type="text/css">
+        td{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="contianer-fluid">
@@ -116,218 +121,32 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($matakuliahs as $matakuliah)
                             <tr>
-                                <td>1</td>
-                                <td>AGH01</td>
-                                <td>Agama I (Hindu)</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="item"></span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>{{ $loop->iteration }}</td>
+                                <td>{{ $matakuliah->matakuliah_kodemk }}</td>
+                                <td>{{ $matakuliah->matakuliah_nama }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk1 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk2 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk3 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk4 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk5 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk6 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk7 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk8 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk9 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk10 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk11 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk12 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk13 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk14 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk15 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk16 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk17 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk18 ==1 ? '⬤' : '' }}</td>
+                                <td>{{ $matakuliah->matakuliah_bk19 ==1 ? '⬤' : '' }}</td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>SII213</td>
-                                <td>Inovasi Sistem Informasi dan Teknologi</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="item"></span>
-                                </td>
-                                <td>
-                                    <span class="item"></span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>BAE112</td>
-                                <td>Bahasa Inggris II</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="item"></span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>SIS309</td>
-                                <td>Keamanan Sistem Informasi</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="item"></span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>MNW401</td>
-                                <td>Kewirausahaan dan Bisnis Sistem Informasi</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="item"></span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="item"></span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>SII208</td>
-                                <td>Desain Interaksi</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="item"></span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>SII209</td>
-                                <td>Desain Interaksi (Praktikum)</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="item"></span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>SII318</td>
-                                <td>Pembangunan Perangkat Lunak</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="item"></span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

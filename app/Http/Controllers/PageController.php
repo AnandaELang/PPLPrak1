@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\File;
 class PageController extends Controller
 {
 
-    
+    public function utama(){
+        $matakuliahs = MataKuliah::all();
+
+        return view('welcome',compact('matakuliahs'));
+    }
 
 
 
